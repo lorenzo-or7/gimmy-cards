@@ -1,0 +1,36 @@
+{
+  "label": "after",
+  "boot_ms": 14218,
+  "revisit_boot_ms": 1668,
+  "revisit_longtasks": {
+    "count": 0,
+    "total_ms": 0,
+    "max_ms": 0
+  },
+  "boot_longtasks": {
+    "count": 0,
+    "total_ms": 0,
+    "max_ms": 0
+  },
+  "idle10s_longtasks": {
+    "count": 0,
+    "total_ms": 0
+  },
+  "idle10s_dom_mutations": 770,
+  "effects": {
+    "elements": 1194,
+    "filter_blur": 0,
+    "backdrop_filter": 4,
+    "blend_modes": 17,
+    "infinite_animations": 9,
+    "running_animations": 9
+  },
+  "scroll": {
+    "longtasks": 0,
+    "longtask_ms": 0,
+    "frame_p95_ms": 17,
+    "frame_max_ms": 33,
+    "frames_over_50ms": 0
+  },
+  "js_heap_mb": 13
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Gimmy Cards — Leilões de cartas colecionáveis</title>
+    <meta name="description" content="Leilões de cartas colecionáveis da comunidade Gimmy Cards. Lances organizados, resultados claros e pedidos acompanhados do lance ao envio." />
+    <meta name="theme-color" content="#0B1218" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FFF9ED" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:title" content="Gimmy Cards" />
+    <meta property="og:description" content="Sua próxima carta. Seu próximo lance." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <link rel="preload" as="image" href="/brand/gimmy-cards-logo-sm.webp" type="image/webp" />
+    <script>
+      // apply saved theme before paint (no flash)
+      try {
+        var t = localStorage.getItem('gimmy-theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
