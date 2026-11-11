@@ -99,7 +99,7 @@ function Atmosphere() {
     <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
       <div
         className="absolute top-[-10%] right-[-12%] h-[120%] w-[78%] bg-cover bg-center opacity-[0.42] [mask-image:radial-gradient(60%_55%_at_55%_45%,black,transparent_75%)] dark:opacity-[0.5] max-lg:top-[-6%] max-lg:right-[-30%] max-lg:h-[62%] max-lg:w-[160%]"
-        style={{ backgroundImage: 'url(/brand/atmosfera.webp)' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}brand/atmosfera.webp)` }}
       />
       <div className="dot-grid absolute inset-0 opacity-30 [mask-image:radial-gradient(55%_50%_at_70%_40%,black,transparent)]" />
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-bg" />
@@ -212,7 +212,7 @@ function HeroStage() {
         >
           <div className="float-y" data-paused={!inView || !!reduce}>
             <img
-              src="/mascot/saltando.webp"
+              src={`${import.meta.env.BASE_URL}mascot/saltando.webp`}
               alt="Gimmy, o dragão da Gimmy Cards, saltando animado sobre as cartas"
               width={900}
               height={595}
