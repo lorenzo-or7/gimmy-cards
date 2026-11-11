@@ -161,7 +161,7 @@ function EditAuction({ id }: { id: string }) {
         title={a.title}
         action={
           <>
-            <Button variant="secondary" onClick={() => window.open(`/leiloes/${a.id}`, '_blank')} icon={<Eye className="size-4" />}>Pré-visualizar</Button>
+            <Button variant="secondary" onClick={() => window.open(`${import.meta.env.BASE_URL}leiloes/${a.id}`, '_blank')} icon={<Eye className="size-4" />}>Pré-visualizar</Button>
             <Button variant="secondary" onClick={() => setDup(true)} icon={<Copy className="size-4" />}>Duplicar</Button>
             {a.status === 'draft' && <Button onClick={() => setReview(true)} icon={<Rocket className="size-4" />}>Revisar e publicar</Button>}
             {a.status === 'published' && a.bid_count === 0 && <Button variant="secondary" onClick={() => setDialog({ kind: 'unpublish' })} icon={<Undo2 className="size-4" />}>Voltar a rascunho</Button>}
