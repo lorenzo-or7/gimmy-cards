@@ -17,7 +17,7 @@ export function Logo({ className, size = 'md' }: { className?: string; size?: 'x
   const w = { xs: 60, nav: 66, sm: 76, md: 104, lg: 220 }[size]
   return (
     <img
-      src={size === 'lg' ? '/brand/gimmy-cards-logo.webp' : '/brand/gimmy-cards-logo-sm.webp'}
+      src={size === 'lg' ? `${import.meta.env.BASE_URL}brand/gimmy-cards-logo.webp` : `${import.meta.env.BASE_URL}brand/gimmy-cards-logo-sm.webp`}
       alt="Gimmy Cards"
       width={w}
       height={Math.round(w * (632 / 752))}
@@ -460,7 +460,7 @@ export function SiteFooter() {
             aria-label="Or7 — idealizado e desenvolvido por Lorenzo Orsetti (abre em nova aba)"
             className="group inline-flex items-center self-start rounded-xl p-1.5 opacity-80 transition-[opacity,background-color] hover:bg-surface-2/70 hover:opacity-100 md:self-auto"
           >
-            <img src="/brand/or7-assinatura.webp" alt="Or7 — Idealizado e desenvolvido por Lorenzo Orsetti" width={720} height={102} className="h-auto w-[196px] sm:w-[220px]" loading="lazy" draggable={false} />
+            <img src={`${import.meta.env.BASE_URL}brand/or7-assinatura.webp`} alt="Or7 — Idealizado e desenvolvido por Lorenzo Orsetti" width={720} height={102} className="h-auto w-[196px] sm:w-[220px]" loading="lazy" draggable={false} />
           </a>
         </div>
       </div>
