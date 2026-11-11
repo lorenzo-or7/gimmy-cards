@@ -43,7 +43,7 @@ export const resolvePose = (pose: MascotPose): MascotName => (pose in LEGACY ? L
 
 /** Public URL of a pose; `small` picks the 360px file. */
 export function mascotSrc(pose: MascotPose, small = false) {
-  return `/mascot/${POSES[resolvePose(pose)].file}${small ? '-sm' : ''}.webp`
+  return `${import.meta.env.BASE_URL}mascot/${POSES[resolvePose(pose)].file}${small ? '-sm' : ''}.webp`
 }
 
 /**
