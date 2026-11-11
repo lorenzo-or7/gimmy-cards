@@ -8,11 +8,11 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/gimmycards/'
  * no dates and no winners in the system, so none are shown.
  */
 export const RAFFLES = [
-  { members: 100, prize: 'Triple 30 anos', language: 'PT-BR', image: '/sorteios/100-triple-30-anos-ptbr.webp' },
-  { members: 250, prize: 'Box com Pôster 30 anos', language: 'PT-BR', image: '/sorteios/250-box-poster-30-anos-ptbr.webp' },
-  { members: 500, prize: 'ETB 30 anos', language: 'PT-BR', image: '/sorteios/500-etb-30-anos-ptbr.webp' },
-  { members: 750, prize: 'Box Binder 30 anos', language: 'Inglês', image: '/sorteios/750-box-binder-30-anos-ingles.webp' },
-  { members: 1000, prize: 'ETB 30 anos', language: 'Inglês', image: '/sorteios/1000-etb-30-anos-ingles.webp' },
+  { members: 100, prize: 'Triple 30 anos', language: 'PT-BR', image: `${import.meta.env.BASE_URL}sorteios/100-triple-30-anos-ptbr.webp` },
+  { members: 250, prize: 'Box com Pôster 30 anos', language: 'PT-BR', image: `${import.meta.env.BASE_URL}sorteios/250-box-poster-30-anos-ptbr.webp` },
+  { members: 500, prize: 'ETB 30 anos', language: 'PT-BR', image: `${import.meta.env.BASE_URL}sorteios/500-etb-30-anos-ptbr.webp` },
+  { members: 750, prize: 'Box Binder 30 anos', language: 'Inglês', image: `${import.meta.env.BASE_URL}sorteios/750-box-binder-30-anos-ingles.webp` },
+  { members: 1000, prize: 'ETB 30 anos', language: 'Inglês', image: `${import.meta.env.BASE_URL}sorteios/1000-etb-30-anos-ingles.webp` },
 ] as const
 
 /** WhatsApp group rules (they govern the group, not the website auctions). */
