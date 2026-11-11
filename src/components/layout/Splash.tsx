@@ -19,7 +19,7 @@ export function Splash({ leaving = false }: { leaving?: boolean }) {
       aria-live="polite"
     >
       <div className="flex w-[min(17rem,72vw)] flex-col items-center">
-        <img src="/brand/gimmy-cards-logo.webp" alt="Gimmy Cards" width={220} height={185} className="w-[190px] select-none" draggable={false} />
+        <img src={`${import.meta.env.BASE_URL}brand/gimmy-cards-logo.webp`} alt="Gimmy Cards" width={220} height={185} className="w-[190px] select-none" draggable={false} />
         <div
           className="splash-track relative mt-9 h-[5px] w-full overflow-hidden rounded-full bg-white/[0.07] ring-1 ring-white/[0.06]"
           role="progressbar"
