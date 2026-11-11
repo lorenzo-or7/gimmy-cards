@@ -90,7 +90,7 @@ export default function App() {
         <BackendProvider fallback={(leaving) => <Splash leaving={leaving} />}>
           <AuthProvider>
             <ToastProvider>
-              <BrowserRouter>
+              <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <ScrollToTop />
                 <Routes>
                   <Route element={<PublicLayout />}>
